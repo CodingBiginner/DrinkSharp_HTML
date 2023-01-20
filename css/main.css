@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans:400');
+
+/* Font */
+body {
+    font-family: 'Black Han Sans', sans-serif;
+}
+
+/* header css */
+.custom-header > .navbar > .container > .navbar-brand {
+    font-size: xx-large;
+}
+
+.custom-header > .navbar > .container > .navbar-toggler > span > i {
+    font-size: xx-large;
+}
+
+.custom-header > .navbar > .container > #navbarSupportedContent > .navbar-nav * {
+    font-size: large;
+}
+
+#rightNavItem > .nav-item a {
+    display: inline-block;            
+}
+
+#rightNavItem > .nav-item a i {
+    font-size: x-large;         
+}
+
+/* header end */
