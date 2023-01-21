@@ -45,3 +45,20 @@
 .loginFormPage > form > .btnList button {
     width: 250px;
 }
+/* loginPage end*/
+
+/* joinPage css */
+.joinPage {
+    background-color: lightgrey;
+    border: 5px solid #212529;
+    border-radius: 10px;
+}
+
+.joinPage > form > .btnList button {
+    width: 250px;
+}
+
+.telSpan {
+    border: none;
+    background-color: lightgrey;
+}
