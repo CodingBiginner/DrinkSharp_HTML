@@ -74,7 +74,7 @@
   <section class="main p-5">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-4 offset-md-4">
+            <div class="col-12 col-sm-12 col-lg-6 offset-lg-3">
                 <div class="joinPage p-4">
                     <hr>
                     <h2 class="text-center">회원가입</h2>
@@ -101,7 +101,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="tel1" class="form-label">전화번호</label>
-                            <div class="input-group">
+                            <div class="input-group tel-group">
                                 <input type="hidden" name="tel" id="tel">
                                 <input type="text" class="form-control" id="tel1">
                                 <span class="input-group-text telSpan">-</span>
@@ -122,8 +122,40 @@
                             <input type="text" class="form-control mb-3" placeholder="기본주소" name="basicAddress" id="inputBasicAddress" readonly>
                             <input type="text" class="form-control" placeholder="상세주소" name="detailAddress" id="inputDetailAddress" readonly>
                         </div>
-                        <!-- TODO : 생년월일 추가 -->
-                        <!-- TODO : 추천인 추가 -->
+                        <div class="mb-3">
+                            <!-- TODO : 생년월일 추가 -->
+                            <label for="inputYear" class="form-label">생년월일</label>
+                            <div class="input-group">                              
+                              <select class="form-select" name="year" id="inputYear">
+                                <!-- TODO : JSTL 이용, 반복문으로 내용 추가할 것 -->
+                                <option selected>1993</option>
+                                <option>1994</option>
+                                <option>1995</option>
+                                <option>1996</option>
+                              </select>
+                              <span class="input-group-text birthSpan">년</span>
+                              <select class="form-select" name="month" id="inputMonth">
+                                <!-- TODO : JSTL 이용, 반복문으로 내용 추가할 것 -->
+                                <option selected>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                              </select>
+                              <span class="input-group-text birthSpan">월</span>
+                              <select class="form-select" name="day" id="inputDay">
+                                <!-- TODO : JSTL 이용, 반복문으로 내용 추가할 것 -->
+                                <option selected>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                              </select>
+                              <span class="input-group-text birthSpan">일</span>
+                            </div>
+                        </div>
+                        <div class="mb-3">                            
+                            <label for="inputRecommender" class="form-label">추천인</label>
+                            <input type="password" class="form-control" placeholder="추천인" name="recommender" id="inputRecommender">
+                        </div>                        
                         <!--
                             TODO : 이용약관 체크박스 추가
                             이용약관 동의, 19세 이상 동의, 선택 동의, 3개 전부 동의
