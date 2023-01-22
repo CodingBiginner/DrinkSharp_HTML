@@ -73,3 +73,8 @@ hr {
     background-color: lightgrey;
     font-weight: bold;    
 }
+
+.mySelect {
+    padding: 0.375rem 1rem 0.375rem 0.25rem;
+    background-position: right 0.1rem center;
+}

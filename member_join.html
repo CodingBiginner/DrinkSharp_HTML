@@ -103,11 +103,11 @@
                             <label for="tel1" class="form-label">전화번호</label>
                             <div class="input-group tel-group">
                                 <input type="hidden" name="tel" id="tel">
-                                <input type="text" class="form-control" id="tel1">
+                                <input type="text" class="form-control" id="tel1" maxlength="4">
                                 <span class="input-group-text telSpan">-</span>
-                                <input type="text" class="form-control" id="tel2">
+                                <input type="text" class="form-control" id="tel2" maxlength="4">
                                 <span class="input-group-text telSpan">-</span>
-                                <input type="text" class="form-control" id="tel3">
+                                <input type="text" class="form-control" id="tel3" maxlength="4">
                             </div>
                         </div>
                         <div class="mb-3">
@@ -126,7 +126,7 @@
                             <!-- TODO : 생년월일 추가 -->
                             <label for="inputYear" class="form-label">생년월일</label>
                             <div class="input-group">                              
-                              <select class="form-select" name="year" id="inputYear">
+                              <select class="form-select mySelect" name="year" id="inputYear">
                                 <!-- TODO : JSTL 이용, 반복문으로 내용 추가할 것 -->
                                 <option selected>1993</option>
                                 <option>1994</option>
@@ -134,7 +134,7 @@
                                 <option>1996</option>
                               </select>
                               <span class="input-group-text birthSpan">년</span>
-                              <select class="form-select" name="month" id="inputMonth">
+                              <select class="form-select mySelect" name="month" id="inputMonth">
                                 <!-- TODO : JSTL 이용, 반복문으로 내용 추가할 것 -->
                                 <option selected>1</option>
                                 <option>2</option>
@@ -142,7 +142,7 @@
                                 <option>4</option>
                               </select>
                               <span class="input-group-text birthSpan">월</span>
-                              <select class="form-select" name="day" id="inputDay">
+                              <select class="form-select mySelect" name="day" id="inputDay">
                                 <!-- TODO : JSTL 이용, 반복문으로 내용 추가할 것 -->
                                 <option selected>1</option>
                                 <option>2</option>
@@ -160,6 +160,33 @@
                             TODO : 이용약관 체크박스 추가
                             이용약관 동의, 19세 이상 동의, 선택 동의, 3개 전부 동의
                         -->
+                        <div class="mb-3">
+                          <div class="form-check mb-1">
+                            <input class="form-check-input" type="checkbox" value="" id="allCheckTerms">
+                            <label class="form-check-label" for="allCheckTerms">
+                              아래 약관에 모두 동의합니다.
+                            </label>
+                          </div>
+                          <div class="form-check mb-1">
+                            <input class="form-check-input" type="checkbox" value="" id="requiredTerms">
+                            <label class="form-check-label" for="requiredTerms">
+                              (필수) <a href=""><span class="badge rounded-pill text-bg-danger">이용약관</span></a>과 <a href=""><span class="badge rounded-pill text-bg-danger">개인정보 수집 및 이용</span></a>에 동의합니다.
+                            </label>
+                          </div>
+                          <div class="form-check mb-1">
+                            <input class="form-check-input" type="checkbox" value="" id="checkAdult">
+                            <label class="form-check-label" for="checkAdult">
+                              (필수) 19세 이상입니다.
+                            </label>
+                          </div>
+                          <div class="form-check mb-1">
+                            <input class="form-check-input" type="checkbox" value="" id="selectTerms">
+                            <label class="form-check-label" for="selectTerms">
+                              (선택) 이메일 및 SMS 마케팅 정보 수신에 동의합니다.<br>
+                              <span style="font-size: 0.75rem;">회원정보에서 언제든지 수신 거부로 변경할 수 있습니다.</span>
+                            </label>
+                          </div>
+                        </div>
                         <div class="btnList text-center mt-5">                            
                             <button type="button" class="btn btn-success btn-lg">회원가입</button>
                         </div>
