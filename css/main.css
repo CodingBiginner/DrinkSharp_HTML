@@ -10,12 +10,20 @@
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: bold;
 }
+.titleBox {
+    font-family: 'Black Han Sans', sans-serif;
+    font-weight: 400;
+}
 
 /* common css */
 hr {
     border: 0;
     height: 5px;
     background-color: black;
+}
+
+.testBox {
+    border: 1px solid black;
 }
 
 /* header css */

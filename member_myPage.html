@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5.x -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- jQuery CDN-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js' integrity='sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==' crossorigin='anonymous'></script>
+    <!-- main.css -->
+    <link href="/css/main.css" rel="stylesheet">
+    <title>Drink# MyPage</title>
+</head>
+<body>
+    <!-- header start -->
+    <header class="custom-header sticky-top mb-3">        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container">
+            <a class="navbar-brand" href="#">Drink#</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+  
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar">
+  
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Drink#</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+              </div> <!-- end offcanvas header-->
+  
+              <div class="offcanvas-body">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="leftNavItem">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">SHOP</a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Whisky</a></li>
+                        <li><a class="dropdown-item" href="#">Vodka</a></li>
+                        <li><a class="dropdown-item" href="#">Rum</a></li>
+                        <li><a class="dropdown-item" href="#">Gin</a></li>
+                        <li><a class="dropdown-item" href="#">Tequila</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">EVENT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">NOTICE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Q&A</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">REVIEW</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="rightNavItem">
+                  <li class="nav-item">                            
+                    <a class="nav-link" href="#"><i class="bi bi-person-circle"></i></a>
+                    <a class="nav-link" href="#"><i class="bi bi-search header-icon"></i></a>
+                  </li>
+                </ul>
+              </div> <!-- end offcanvas-body-->
+  
+            </div> <!-- end offcanvas-->
+  
+          </div>
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <section class="main customSection p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="row testBox">
+                        <h3 class="titleBox">주문 내역</h3>
+                        <table class="table">
+                            <thead>
+                                <th>일자</th>
+                                <th>상품정보</th>
+                                <th>가격</th>
+                                <th>상태</th>
+                            </thead>
+                            <tbody>
+                                <td>23.01.05</td>
+                                <td>ABSOLUTE VODKA 외 3건</td>
+                                <td>200,000원</td>
+                                <td>배송 완료</td>
+                            </tbody>
+                            <tbody>
+                                <td>23.01.06</td>
+                                <td>Midori 외 3건</td>
+                                <td>195,000원</td>
+                                <td>배송 완료</td>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row testBox">
+                        <h3 class="titleBox">내가 쓴 글</h3>
+                        <table class="table">
+                            <thead>
+                                <th>일자</th>
+                                <th>내용</th>
+                                <th>유형</th>
+                            </thead>
+                            <tbody>
+                                <td>23.01.05</td>
+                                <td>배송이 빠르고 잘 왔습니다 굿굿!</td>
+                                <td>후기</td>
+                            </tbody>
+                            <tbody>
+                                <td>23.01.06</td>
+                                <td>역시 D# 빠른 배송 감사합니다 :)</td>
+                                <td>후기</td>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="row testBox">
+                        <h3 class="titleBox">적립금 내역</h3>
+                        <span class="text-end">보유 적립금 3,000원</span>
+                        <table class="table">
+                            <thead>
+                                <th>일자</th>
+                                <th>사유</th>
+                                <th>적립금</th>
+                                <th>유형</th>
+                            </thead>
+                            <tbody>
+                                <td>23.01.05</td>
+                                <td>후기 작성<br>ABSOLUTE VODKA 외 3건</td>
+                                <td>1,300원</td>
+                                <td>지급</td>
+                            </tbody>
+                            <tbody>
+                                <td>23.01.06</td>
+                                <td>후기 작성<br>Midori 외 3건</td>
+                                <td>3,000원</td>
+                                <td>지급</td>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 testBox">
+                    <h3 class="titleBox">회원 정보</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main end -->
+
+    <!-- footer start-->
+    <div class="custom-footer container mt-3">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-6 col-md-2 mb-3">
+              <h5>Section</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+              </ul>
+            </div>            
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2023 Drink#, Inc. All rights reserved.</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-twitter"></i></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-facebook"></i></a></li>
+              <li class="ms-3"><a class="link-dark" href="#"><i class="bi bi-instagram"></i></a></li>
+            </ul>
+          </div>
+        </footer>
+    </div>
+    <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
