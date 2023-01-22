@@ -42,8 +42,8 @@ hr {
 /* header end */
 
 /* loginPage css */
-.loginFormPage {    
-    background-color: lightgrey;
+.loginFormPage {
+    background-color: papayawhip;
     border: 5px solid #212529;
     border-radius: 10px;
 }
@@ -55,7 +55,7 @@ hr {
 
 /* joinPage css */
 .joinPage {
-    background-color: lightgrey;
+    background-color: papayawhip;
     border: 5px solid #212529;
     border-radius: 10px;
 }
@@ -75,6 +75,16 @@ hr {
 }
 
 .birthSelect {
-    padding: 0.375rem 1rem 0.375rem 0.25r`em;
+    padding: 0.375rem 1rem 0.375rem 0.25rem;
     background-position: right 0.1rem center;
+}
+
+.policyBadge {
+    text-decoration: none;
+    color: inherit;
+}
+
+.policyBadge:hover {
+    text-decoration: underline;
+    color: inherit;
 }
