@@ -118,8 +118,9 @@ hr {
 }
 /* joinPage end */
 
-/* productListPage css*/
+/* productListPage css */
 .list-group-item.list-group-item-action.active.disabled {
     background-color: #212529;
     border-color: #212529;
 }
+/* productListPage css end */
