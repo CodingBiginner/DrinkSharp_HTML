@@ -77,7 +77,7 @@ hr {
 }
 
 .loginFormPage > form > .btnList button {
-    width: 250px;
+    width: 7rem;
 }
 /* loginPage end */
 
@@ -89,7 +89,7 @@ hr {
 }
 
 .joinPage > form > .btnList button {
-    width: 250px;
+    width: 7rem;
 }
 
 #tel1, #tel2, #tel3 {
