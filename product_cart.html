@@ -75,62 +75,40 @@
     <section class="main mt-5">
         <div class="container">
             <h2 class="titleBox">장바구니 (<span>3</span>)</h2>
-            <div class="row">
-                <div class="col-lg-6">상품정보</div>
+            <div class="row text-center">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4">상품정보</div>
                 <div class="col-lg-3">수량</div>
                 <div class="col-lg-3">가격</div>                
             </div>
             <hr>
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-12 d-flex align-items-center">
-                    <img src="/img/midori.jpg" class="rounded float-start" alt="product" width="150px">
-                    <span class="align-items-center">Midori Melon Liquor</span>                    
+            <!-- TODO : 반복문 시작 지점 (장바구니 리스트)-->
+            <div class="row align-items-center text-center">
+                <div class="col-lg-2 col-6">
+                    <img src="/img/midori.jpg" class="rounded img-fluid" alt="product">
                 </div>
-                <div class="col-lg-3 col-12">
+                <div class="col-lg-4 col-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="align-items-center">Midori Melon Liquor</span>
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="btn btn-outline-dark btn-sm">삭제하기</button>
+                        </div>
+                    </div>
+                </div>                
+                <div class="col-lg-3 col-6">
                     <div class="btn-group" role="group">
                         <button type="button" class="btn btn-outline-dark">-</button>
                         <button type="button" class="btn disabled">1</button>
                         <button type="button" class="btn btn-outline-dark">+</button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-12">
+                <div class="col-lg-3 col-6">
                     <span>30,000원</span>
                 </div>                
             </div>
-            <hr>
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-12 d-flex align-items-center">
-                    <img src="/img/vodka.jpg" class="rounded float-start" alt="product" width="150px">
-                    <span class="align-items-center">Absolut Vodka</span>                    
-                </div>
-                <div class="col-lg-3 col-12">
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-outline-dark">-</button>
-                        <button type="button" class="btn disabled">1</button>
-                        <button type="button" class="btn btn-outline-dark">+</button>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-12">
-                    <span>35,000원</span>
-                </div>                
-            </div>
-            <hr>
-            <div class="row align-items-center">
-                <div class="col-lg-6 d-flex align-items-center">
-                    <img src="/img/gin.gif" class="rounded float-start" alt="product" width="150px">
-                    <span class="align-items-center">Gordon's Jin</span>
-                </div>
-                <div class="col-lg-3">
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-outline-dark">-</button>
-                        <button type="button" class="btn disabled">1</button>
-                        <button type="button" class="btn btn-outline-dark">+</button>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <span>25,000원</span>
-                </div>                
-            </div>
+            <!-- TODO : 반복문 끝 지점 (장바구니 리스트)-->
             <hr>
             <div class="row mt-3">
                 <div class="offset-lg-6 col-lg-6 col-12">

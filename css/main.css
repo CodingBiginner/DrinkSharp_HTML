@@ -4,7 +4,8 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400');
 
 /* Font */
-.custom-header, .custom-footer { font-family: 'Black Han Sans', sans-serif; }
+.custom-header,
+.custom-footer { font-family: 'Black Han Sans', sans-serif; }
 .main * {
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: bold;
