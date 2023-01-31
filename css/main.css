@@ -99,7 +99,7 @@ hr {
 
 .telSpan, .birthSpan {
     border: none;
-    background-color: papayawhip;
+    background-color: inherit;
     font-weight: bold;    
 }
 
@@ -125,3 +125,9 @@ hr {
     border-color: #212529;
 }
 /* productListPage css end */
+
+/* productPayment css */
+
+
+
+/* productPayment css end */

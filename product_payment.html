@@ -139,9 +139,35 @@
                             <!-- TODO : 결제 정보 넣을 것-->
                             할인코드, 적립금, 상품합계, 배송비, 총 할인 금액, 결제 금액
                         </div>
+                        <div class="mb-3">
+                          <label for="inputDiscountCode" class="form-label">할인코드</label>
+                          <input type="text" class="form-control" placeholder="할인코드" id="inputDiscountCode">
+                        </div>
+                        <div class="mb-3">
+                          <label for="" class="form-label">적립금 (보유 적립금 <span>0</span>원)</label>
+                          <div class="input-group">
+                            <input type="text" class="form-control">
+                            <button class="btn btn-outline-secondary" type="button">전액사용</button>
+                          </div>
+                        </div>
                     </div>
                     <hr>
                     <div>
+                      <div class="text-form clearfix">
+                        <h5 class="float-start">상품 합계</h5> <span class="float-end"><span>30,000</span>원</span>
+                      </div>
+                      <div class="text-form clearfix">
+                        <h5 class="float-start">배송비 <span>(아이콘)</span></h5> <span class="float-end"><span>4,000</span>원</span>
+                      </div>
+                      <div class="text-form clearfix mb-3">
+                        <h5 class="float-start">총 할인 금액</h5> <span class="float-end"><span>0</span>원</span>
+                      </div>
+                      <div class="text-form clearfix">
+                        <h5 class="float-start">결제 금액</h5> <span class="float-end"><span>34,000</span>원</span>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="mb-3">
                         <h5>결제 방법</h5>                    
                         <div class="btn-group" role="group">
                             <input type="radio" class="btn-check" name="paymentMethod" id="card" autocomplete="off" checked>
@@ -149,7 +175,7 @@
                             <input type="radio" class="btn-check" name="paymentMethod" id="account" autocomplete="off">
                             <label class="btn btn-outline-dark" for="account">무통장입금</label>
                         </div>
-                        <div class="accountInfo">
+                        <div class="accountInfo collapse"> <!-- 무통장 입금 선택할때! -->
                             <hr>
                             <div class="mb-3">
                                 <label for="inputDepositor" class="form-label">입금자명</label>
@@ -159,20 +185,23 @@
                                 <label class="form-label">계좌번호</label>
                                 <label class="form-label">신한 110-370-597337 (권우영)</label>
                             </div>
-                            <div class="mb-3">
+                            <div >
                                 <label for="" class="form-label">환불계좌</label>
-                                <div class="input-group">
+                                <div class="input-group mb-3">
                                     <select class="form-select" id="" name="">
                                         <option selected>은행선택</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                        <option value="1">신한은행</option>
+                                        <option value="2">우리은행</option>
+                                        <option value="3">국민은행</option>
                                     </select>
                                     <input type="text" class="form-control" placeholder="예금주">
                                 </div>
                                 <input type="text" class="form-control" placeholder="환불 계좌 번호">
                             </div>
                         </div>
+                    </div>
+                    <div class="d-grid">                      
+                      <button class="btn btn-dark btn-lg" type="button"><span>34,000</span>원 결제하기</button>
                     </div>
                 </form>
             </div>
