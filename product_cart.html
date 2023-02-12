@@ -99,13 +99,13 @@
                 </div>                
                 <div class="col-lg-3 col-6">
                     <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-outline-dark">-</button>
+                        <button type="button" class="btn btn-outline-dark btn-decrease-amount">-</button>
                         <button type="button" class="btn disabled">1</button>
-                        <button type="button" class="btn btn-outline-dark">+</button>
+                        <button type="button" class="btn btn-outline-dark btn-increase-amount">+</button>
                     </div>
                 </div>
                 <div class="col-lg-3 col-6">
-                    <span>30,000원</span>
+                    <span>30,000</span>원
                 </div>                
             </div>
             <!-- TODO : 반복문 끝 지점 (장바구니 리스트)-->
@@ -143,6 +143,38 @@
         </div>
     </section>
     <!-- main end -->
+
+    <script>
+
+      // 상품 가격!
+      let midoriPrice = 30000;
+
+      // 개수 - 버튼 클릭시
+      $('.btn-decrease-amount').click(function() {
+        const amount = $(this).next().text();
+        if(amount < 1) {
+          alert('상품 개수는 0보다 밑으로 갈수 없습니다.');
+          return;
+        }
+        const calcAmount = +amount - 1;
+
+        $(this).next().html(calcAmount);
+        $(this).parent().parent().next().children().text(midoriPrice * calcAmount);
+        
+      });
+
+      // 개수 + 버튼 클릭시
+      $('.btn-increase-amount').click(function() {
+        const amount = $(this).prev().text();
+
+        const calcAmount = +amount + 1;
+        
+        $(this).prev().html(calcAmount);
+        $(this).parent().parent().next().children().text(midoriPrice * calcAmount);
+
+      });
+
+    </script>
 
     <!-- footer start-->
     <div class="custom-footer container mt-3">

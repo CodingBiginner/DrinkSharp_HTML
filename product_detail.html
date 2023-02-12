@@ -138,8 +138,9 @@
 
     <script>
 
-      // 상품 가격!
-      let price = 30000;
+      $(document).ready(function() {
+        // 상품 가격!
+      let price = 40000;
 
       // 개수 - 버튼 클릭시
       $('.btn-decrease-amount').click(function() {
@@ -151,7 +152,7 @@
         const calcAmount = +amount - 1;
 
         $(this).next().html(calcAmount);
-        $(this).parent().next().children().text(calcAmount * price);
+        // $(this).parent().next().children().text(calcAmount * price);
         
       });
 
@@ -162,8 +163,16 @@
         const calcAmount = +amount + 1;
         
         $(this).prev().html(calcAmount);
-        $(this).parent().next().children().text(calcAmount * price);
+        // $(this).parent().next().children().text(calcAmount * price);
       });
+
+      // 갯수가 변경이 될경우!
+      $('.btn-amount').on('DOMSubtreeModified', function () {
+        const amount = $(this).text();
+        $(this).parent().next().children().text(price * amount);
+      });
+
+      }); // end jQuery
 
     </script>
 
